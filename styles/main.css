@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+a:active, a:hover, a {
+    text-decoration: none;
+    user-select: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container-wrap {
+    max-width: 1920px;
+    margin: auto;
+}
+
+.container {
+    max-width: 95%;
+    margin: auto;
+    width: 100%;
+}

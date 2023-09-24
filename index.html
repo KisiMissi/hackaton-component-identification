@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index/index.css">
+    <title>Тестер</title>
+</head>
+<body>
+    <section class="container-wrap">
+        <section class="container">
+            <section class="work-zone">
+                <h1>Проверка наименования детали</h1>
+                <form action="tester.php" method="post" enctype="multipart/form-data">
+                    <!-- <input class="file" type="file" name="filename"> -->
+                    <div class="input__wrapper">
+                        <input name="filename" type="file" id="input__file" class="input input__file" multiple>
+                        <label for="input__file" class="input__file-button">
+                           <span class="input__file-icon-wrapper"><img class="input__file-icon" src="/img/arrow.svg" alt="Выбрать файл" width="25"></span>
+                           <span class="input__file-button-text">Выберите файл</span>
+                        </label>
+                     </div>
+                    <input class="button" type="submit" value="Отправить">
+                    <div class="preloader spinner hide">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                      </div>
+                </form>
+                <div class="picture preview">
+                    <img id="preview-result" alt="">
+                </div>
+                <div class="picture result">
+                    <img src="/temp/result/compressed_pic.jpg" alt="">
+                </div>
+            </section>
+        </section>
+    </section>
+    <script src="/js/script.js"></script>
+</body>
+</html>
